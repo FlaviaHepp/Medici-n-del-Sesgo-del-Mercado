@@ -108,3 +108,49 @@ Se recomienda indexar:
 
 ##👤Autora
 Flavia Hepp Proyecto de SQL aplicó un análisis de riesgo basado en eventos.
+
+***
+📉 **No es solo cómo se mueve el precio… sino cómo cierra**
+
+Dos acciones pueden tener la misma variación diaria…
+pero contar historias completamente distintas dentro de la jornada.
+
+👉 Analicé el **sesgo intradía usando la “sombra” de la vela**, midiendo dónde cierra el precio dentro del rango *(Low–High)*.
+
+💡 **Insight clave:**
+Algunas acciones están cerrando consistentemente en el **tercio inferior de su rango diario** durante la última semana.
+Incluso si el precio no cae fuerte… el comportamiento intradía revela **presión vendedora persistente**.
+
+---
+
+📊 **¿Qué medí?**
+
+* Posición del cierre dentro del rango diario:
+  *(Close - Low) / (High - Low)*
+* Promedio de ese ratio en los últimos 7 días
+* Identificación de activos con ratio < 0.33
+
+---
+
+🧠 **¿Cómo interpretarlo?**
+
+* Ratio cercano a 0 → cierre en mínimos → sesgo bajista
+* Ratio cercano a 1 → cierre en máximos → sesgo alcista
+* Persistencia del patrón → posible señal de debilidad estructural
+
+---
+
+⚡ **¿Por qué importa?**
+
+Porque este tipo de señal:
+
+* Detecta presión de venta “silenciosa”
+* Puede anticipar rupturas bajistas
+* Complementa análisis de velas y flujo intradía
+
+---
+
+📌 Pregunta abierta:
+¿Prestan atención a dónde cierra el precio dentro del rango… o solo al cambio diario?
+
+#Trading #QuantFinance #DataScience #StockMarket #PriceAction #TechnicalAnalysis #SQL #Analytics
